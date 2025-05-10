@@ -6,7 +6,7 @@ Less, Greater and Equal. */
 
 fn main() {
     println!("Guess the number!");
-    let secret_number = rand::thread_rng().gen_range(1..=10);
+    let secret_number: i8 = rand::thread_rng().gen_range(1..=10);
 /* gen_range method is inclusive meaning start and end are included
 thread_rng() returns a random number generator
 that is local to the current thread of execution. */  
@@ -26,7 +26,7 @@ that is local to the current thread of execution. */
     the .read_line method is a 'Result' type. 
     Values of a result type, like values of any type, have methods defined on them. */
             .expect("Failed to read line");
-        let guess: u32 = match guess.trim().parse() {
+        let guess: i8 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => {
                 println!("Please enter a number!");
