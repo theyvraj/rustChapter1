@@ -9,7 +9,7 @@ fn main() {
     };
     println!("The result is {result}");
 }
-*/
+
 fn main() {
     let mut count = 0;
     'counting_up: loop {
@@ -30,3 +30,43 @@ fn main() {
     }
     println!("End count = {count}");
 }
+
+fn main() {
+    let mut number = 3;
+    let mut i = 0;
+    while number > i {
+        println!("nice sits");
+        i += 1;
+        
+    }
+}
+fn main() {
+    let a: [i32; 5] = [43, 12, 67, 38, 22];
+    for element in a {
+        println!("The value of current value is {element}");
+    }
+}
+
+fn main() {
+    let a: [i32; 5] = [10, 20, 30, 40, 50];
+    let mut index = 0;
+    while index < 5 {
+        println!("The value of current value is {}", a[index]);
+        index += 1;
+    }
+}
+fn main() {
+    for i in (1..4).rev() {
+        println!("{i}");
+    }
+    println!("LIFTOFF");
+}
+
+fn main() {
+    for i in 1..4 {
+        println!("{i}");
+    }
+    println!("LIFTOFF");
+}
+*/
+
