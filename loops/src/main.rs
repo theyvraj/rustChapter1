@@ -69,4 +69,4 @@ fn main() {
     println!("LIFTOFF");
 }
 */
-
+fn main() {}
